@@ -1,0 +1,202 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --Violet: hsl(257, 40%, 49%);
+    --Soft-Magenta: hsl(300, 69%, 71%);
+}
+
+body {
+    font-family: 'Big Shoulders Display', cursive;
+    font-family: 'Open Sans', sans-serif;
+    background-repeat: no-repeat;
+    background-color: var(--Violet);
+    background-image: url(images/bg-mobile.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-attachment: fixed;
+}
+
+.container {
+    height: 750px;
+    width: 100%;
+}
+
+/* Logo */
+.container .logo {
+    padding: 20px 20px 60px 25px;
+}
+
+.container .logo img {
+    width: 150px;
+}
+
+/* Image */
+.container .image-vocab .image {
+    text-align: center;
+}
+
+.container .image-vocab .image img {
+    width: 300px;
+}
+
+/* Vocab */
+.container .image-vocab .vocab {
+    text-align: center;
+}
+
+.container .image-vocab .vocab h2 {
+    color: white;
+    padding: 20px 45px 10px;
+    font-size: 22px;
+    font-family: 'Big Shoulders Display', cursive;
+    font-family: 'Poppins', sans-serif;
+}
+
+.container .image-vocab .vocab p {
+    color: rgb(230, 230, 230);
+    padding: 0 20px 20px 20px;
+    line-height: 25px;
+    font-size: 15px;
+}
+
+/* Button */
+.container .image-vocab .vocab button {
+    margin: 0 auto;
+    width: 200px;
+    color: var(--Violet);
+    background-color: white;
+    height: 30px;
+    border-radius: 20px;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    box-shadow: 0 5px 0 rgb(0, 0, 0, 0.2);
+}
+
+.container .image-vocab .vocab button:hover {
+    background-color: var(--Soft-Magenta);
+    color: white;
+    cursor: pointer;
+}
+
+/* Icons */
+.container .icons {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 50px auto 500px;
+    width: 140px;
+}
+
+.container .icons i {
+    border-radius: 50%;
+    border: 1px solid;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 30px;
+    width: 30px;
+    color: white;
+}
+
+.container .icons i:hover {
+    color: #f852c1;
+    cursor: pointer;
+}
+
+
+@media (min-width: 460px) {
+    .container {
+        height: 100vh;
+    }
+
+    .container .image-vocab .vocab h2 {
+        font-size: 25px;
+    }
+
+    .container .image-vocab .vocab p {
+        line-height: 30px;
+        font-size: 16px;
+    }
+}
+
+
+@media (min-width: 768px) {
+    body {
+        background-image: url(images/bg-desktop.svg);
+        background-size: 100% 100%;
+    }
+
+    .container {
+        position: relative;
+        padding: 0 20px;
+    }
+
+    .container .image-vocab {
+        display: flex;
+        margin: 0 auto;
+        margin-top: 5%;
+        height: 350px;
+    }
+
+    .container .image-vocab .image {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 55%;
+    }
+
+    .container .image-vocab .image img {
+        width: 100%;
+    }
+
+    .container .image-vocab .vocab {
+        text-align: left;
+        width: 50%;
+        padding-right: 20px;
+    }
+
+    .container .image-vocab .vocab h2 {
+        padding: 10px;
+    }
+
+    .container .image-vocab .vocab button {
+        margin: 0 0 0 20px;
+    }
+
+    .container .icons {
+        width: 140px;
+        position: absolute;
+        right: 120px;
+        bottom: 40px;
+        margin-bottom: 0;
+    }
+}
+
+@media (min-width: 1086px) {
+    .container .image-vocab .vocab h2 {
+        font-size: 30px;
+    }
+
+    .container .image-vocab .vocab p {
+        font-size: 20px;
+    }
+}
+
+@media (min-width: 1150px) {
+    .container .image-vocab {
+        width: 1112px;
+    }
+}
+
+@media (min-width: 1285px) {
+    body {
+        background-size: 85% 100%;
+    }
+}
